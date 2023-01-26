@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bghome"
+    tools:context=".Activity.Splashscreen"
+    android:layout_centerVertical="true"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnbuychips"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/transparent_bg_bordered_button_red"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="BUY CHIPS"
+            android:textColor="#ADACAD"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/noti"
+            android:tint="@color/colordullwhite"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgshare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/share"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/imalucky"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/btnbuychips"
+            android:src="@drawable/lucky"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/imgMywining"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/my_winnig"
+            android:visibility="gone" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rltheader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/home_header"
+            android:layout_marginBottom="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/rltimageptofile"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/lnr_levels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rltimageptofile"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/lnr_levels"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="-25dp"
+                                    android:layout_marginRight="-20dp"
+                                    android:layout_toLeftOf="@+id/iv_add"
+                                    android:layout_toRightOf="@+id/imgicon"
+                                    android:background="@drawable/ic_corner_strip" />
+
+                                <ImageView
+                                    android:id="@+id/imgicon"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/ic_rupee"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/txtwallet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toRightOf="@+id/imgicon"
+                                    android:text="2.37L"
+                                    android:textColor="@color/colordullwhite"
+                                    android:textSize="16sp"
+                                    android:minWidth="100dp"
+                                    android:gravity="center"
+                                    />
+
+
+                                <ImageView
+                                    android:id="@+id/iv_add"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_toRightOf="@+id/txtwallet"
+                                    android:src="@drawable/ic_refresh" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtproname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/imaprofile"
+                        android:text="Welcome Back "
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="20dp"
+                        app:fontFilePath="@string/Helvetica_Bold_Extra" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rltimageptofile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_black">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imaprofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/avatar" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:id="@+id/lnrbuychips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgbuychips"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/buy_chips" />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtBuyChips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Buy Chips"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrinvite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imginvite"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/home_invite" />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtInvite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Invite"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgMail"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/homemail" />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Mail"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrearnchips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgearnchips"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/home_leaderboard"
+                        />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtEarn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Leader Board"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnrhistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/home_leaderboard"
+                        />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Leader Board"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnrvideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgvideo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/home_video" />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtvideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Mail"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnr_redeem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_redeem"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/home_video" />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/tv_redeem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Mail"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lnrsetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgsetting"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/home_setting"
+                        />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Logout"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnrlogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgLogout"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/menu"
+                        android:rotation="90"
+                        />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:id="@+id/txtlogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:text="Logout"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_view"
+            android:layout_below="@+id/rltheader"
+            android:layout_above="@+id/rltBottom"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/home_card_left_mar"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgpublicGame"
+                        android:layout_width="@dimen/home_card_width"
+                        android:layout_height="@dimen/home_card_height"
+                        android:src="@drawable/home_public_img"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        >
+
+                        <View
+                            android:id="@+id/v_flesh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_shine"
+                            android:visibility="visible"
+                            android:rotation="90"
+
+                            />
+
+                        <View
+                            android:id="@+id/shine"
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_shine"
+                            android:rotation="40"
+                            android:layout_marginTop="-70dp"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_card_left_mar"
+                    android:visibility="visible"
+
+                    >
+                    <ImageView
+                        android:id="@+id/rlt_circle2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/circle_private"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgPrivategame"
+                        android:layout_width="@dimen/home_card_width"
+                        android:layout_height="@dimen/home_card_height"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/home_private_table" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/home_card_left_mar"
+                    >
+                    <ImageView
+                        android:id="@+id/rlt_circle3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/circle_custom"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/ImgCustomePage"
+                        android:layout_width="@dimen/home_card_width"
+                        android:layout_height="@dimen/home_card_height"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/home_custom_table"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/home_card_left_mar"
+                    >
+                    <ImageView
+                        android:id="@+id/rlt_circle4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/circle_rummy"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/ImgVariationGane"
+                        android:layout_width="@dimen/home_card_width"
+                        android:layout_height="@dimen/home_card_height"
+                        android:src="@drawable/home_rummy"
+                        android:layout_marginRight="5dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_card_left_mar"
+                    android:visibility="visible"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/circle_3patti"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/iv_andher"
+                        android:layout_width="@dimen/home_card_width"
+                        android:layout_height="@dimen/home_card_height"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/home_andherbahar"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rltBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lnr_social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_s_media"
+                        />
+
+                    <com.gamegards.allinonev3.Utils.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Joint us"
+                        android:textColor="@color/colordullwhite"
+                        android:textSize="12sp"
+                        android:visibility="visible"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlt_animation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+        </RelativeLayout>
+
+        <com.gamegards.allinonev3.Utils.TextViewWithFont
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Welcome Back "
+            android:textColor="@color/colordullwhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!--        <View-->
+        <!--            android:id="@+id/view_center"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            />-->
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

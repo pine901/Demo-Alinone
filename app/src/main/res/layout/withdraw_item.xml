@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+    <Spinner
+        android:background="@color/colorPrimary"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter amount"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/gray_bg"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edtMobileNo"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Mobile No."
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/gray_bg"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/edtAmount"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="@drawable/withdraw_btn"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Submit"/>
+</LinearLayout>

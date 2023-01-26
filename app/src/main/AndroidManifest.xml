@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gamegards.allinonev3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:screenOrientation="sensorLandscape"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.gamegards.allinonev3.RedeemCoins.RedeemActivity"
+            android:screenOrientation="sensorLandscape"></activity>
+
+        <activity android:name="com.gamegards.allinonev3._AdharBahar.GameActivity"></activity>
+        <activity android:name="com.gamegards.allinonev3._AdharBahar.AndharBahar_Home_A"
+            android:screenOrientation="sensorLandscape"
+            />
+        <activity
+            android:name="com.gamegards.allinonev3.MyAccountDetails.MyWinningAcitivity"
+            android:screenOrientation="sensorLandscape" /> <activity
+            android:name="com.gamegards.allinonev3._Rummy.Rummy5Player"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.MainActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.TestRummyActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.WelcomeBonusActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.GameChatActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.RummyActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.RummyActivityWeb"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.MaiUserListingActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.Splashscreen"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.Homepage"
+            android:screenOrientation="sensorLandscape" /> <!-- <activity -->
+        <!-- android:name=".LoginScreen" -->
+        <!-- android:screenOrientation="sensorPortrait" /> -->
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.LoginScreen"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.BuyChipsList"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.gamegards.allinonev3._TeenPatti.PublicTable"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter android:label="teenpattititanicsharkpublictable">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="@string/deep_link_url"
+                    android:pathPrefix="/teenpattipublic"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gamegards.allinonev3._TeenPatti.PrivateTablev2"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter android:label="teenpattititanicsharkprivatetable">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="@string/deep_link_url"
+                    android:pathPrefix="/teenpattiprivate"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gamegards.allinonev3._TeenPatti.CustomsiedTablev3"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter android:label="teenpattititanicsharkcustmisedtable">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="@string/deep_link_url"
+                    android:pathPrefix="/teenpatticustmised"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gamegards.allinonev3.Activity.BuyChipsDetails"
+            android:screenOrientation="sensorLandscape" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/razor_pay_test" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name="com.gamegards.allinonev3.Firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
